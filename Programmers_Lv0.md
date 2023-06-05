@@ -47,3 +47,10 @@ answer = n < m ? 1 : 0; // n < m 이면 1 리턴, 아니면 0 리턴
 eval(str)
 eval('2+2') //4
 eval('console.log(1+1)') //콘솔에 2 찍힘
+
+# Falsy : undefined / null / 0 / '' / NaN
+
+Falsy한 값을 거를 필요가 있을 때,
+If(!person){
+console.log('person이 없습니다.');
+}
