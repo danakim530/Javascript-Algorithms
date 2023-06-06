@@ -54,3 +54,39 @@ Falsy한 값을 거를 필요가 있을 때,
 If(!person){
 console.log('person이 없습니다.');
 }
+
+# 문자열의 합
+
+num += '1'
+num += '2'
+return num; // 3 아니고 '12'임
+// parseInt() 써주기
+
+# 문자열 -> 배열
+
+arr1 = str1.split('') // 단어별로 잘라서 배열에 담기
+arr2 = str2.split(',') // 쉼표 별로 잘라서 배열에 담기
+arr3 = str3.split(',', 2) // 쉼표 별로 자르는데 2개만 배열로 저장. 나머지는 버림
+
+# map
+
+const result = numbers.map((number) => number \* 2); //새로운 배열을 반환
+
+# 요소 하나씩 검사
+
+- 문자열 for(let s of str){console.log(s);}
+- 배열 arr.forEach(c => console.log(c))
+
+# 문자열
+
+- arr1 = str1.split('') // 문자열 -> 배열
+- str.slice() // str.substring()이랑 같음. 문자열 자르기
+- for(let s of str){console.log(s);} // 요소 하나하나 검사
+- toLowerCase() / toUpperCase()
+
+# 배열
+
+- arr.join(''); // 배열 -> 문자열
+- arr.forEach(c => console.log(c)) // 요소 하나하나 검사
+- const result = numbers.map((number) => number \* 2);
+- arr.push(str[i].toLowerCase());
