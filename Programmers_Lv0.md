@@ -62,6 +62,15 @@ num += '2'
 return num; // 3 아니고 '12'임
 // parseInt() 써주기
 
+# 문자열의 합 vs 정수의 합
+
+'1' + '2' = '12'
+1 + 2 = 3
+
+# 정수 -> 문자열
+
+num.toString()
+
 # 문자열 -> 배열
 
 arr1 = str1.split('') // 단어별로 잘라서 배열에 담기
@@ -71,6 +80,9 @@ arr3 = str3.split(',', 2) // 쉼표 별로 자르는데 2개만 배열로 저장
 # map
 
 const result = numbers.map((number) => number \* 2); //새로운 배열을 반환
+
+\*\* 만약 string인데 map 쓰고 싶다면,
+[...str1].map((x,idx) => x + str2[idx]).join('');
 
 # 요소 하나씩 검사
 
@@ -90,3 +102,7 @@ const result = numbers.map((number) => number \* 2); //새로운 배열을 반�
 - arr.forEach(c => console.log(c)) // 요소 하나하나 검사
 - const result = numbers.map((number) => number \* 2);
 - arr.push(str[i].toLowerCase());
+
+# 두개의 수 중에 큰 수 선택
+
+Math.max(num1, num2)
