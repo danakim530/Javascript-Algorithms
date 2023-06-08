@@ -106,3 +106,21 @@ const result = numbers.map((number) => number \* 2); //새로운 배열을 반�
 # 두개의 수 중에 큰 수 선택
 
 Math.max(num1, num2)
+
+# 문자열 찾기
+
+// 문자열의 시작 위치(숫자) 반환
+str.indexOf('javascript') // 위치 리턴
+str.index('javascript', 5) // 시작위치 지정 : 5 이후부터 검사
+
+str.search('javascript') // indexOf랑 같은데 시작 위치 지정 불가
+
+str.lastIndexOf('javascript') // 뒤에서부터 검사
+
+// true or false 반환
+str.includes('javascript')
+str.includes('javascript',3) // 시작 위치 지정 : 3 이후부터 검사
+
+# 제곱
+
+Math.pow(2,3) //2의 세제곱
