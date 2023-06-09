@@ -124,3 +124,28 @@ str.includes('javascript',3) // 시작 위치 지정 : 3 이후부터 검사
 # 제곱
 
 Math.pow(2,3) //2의 세제곱
+
+# 문자열을 숫자화
+
+Number(code[i]) === 1
+
+# forEach와 map의 차이
+
+- forEach : 말 그대로 for문 대체. 리턴하는 것이 없다.
+  arr.forEach(n=> {
+  squared.push(n+n);
+  });
+
+- map : 또 다른 배열을 리턴함.
+  const squared = arr.map(n => n+n);
+
+# Number()와 parseInt()의 차이 : 문자열 -> 숫자화
+
+let test = '2020년도';
+Number(test); // NAN
+parseInt(test); // 2020 - 숫자만 뽑아주기 가능
+
+let test2 = '10.1234';
+Number(test2); // 10.1234
+parseInt(test2); // 10
+parseFloat(test2); // 10.1234
