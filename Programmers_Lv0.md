@@ -189,3 +189,16 @@ Math.min(...nums); //1
 for문은 break; 사용 가능
 forEach()는 break; 사용 불가 + 그냥 for문이랑 같음. 리턴하는 것 없음.
 map()은 break; 사용 불가 + 새로운 배열 만들어서 리턴함.
+
+
+# 문자열 순서 뒤집기
+
+방법1. str.split('').reverse() 
+// split() : 문자열 -> 배열로 
+// reverse(0) : 배열을 반전
+// join() : 배열 -> 문자열로 
+
+방법2. 내림차순으로 for문
+for(let i=str.length-1; i>=0; i--){
+  newString+= str[i];
+}
