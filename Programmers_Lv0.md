@@ -89,16 +89,18 @@ const result = numbers.map((number) => number \* 2); //새로운 배열을 반�
 - 문자열 for(let s of str){console.log(s);}
 - 배열 arr.forEach(c => console.log(c))
 
-# 문자열
+# 문자열 split()
 
 - arr1 = str1.split('') // 문자열 -> 배열
 - str.slice() // str.substring()이랑 같음. 문자열 자르기
 - for(let s of str){console.log(s);} // 요소 하나하나 검사
 - toLowerCase() / toUpperCase()
 
-# 배열 -> 문자열
+# 배열 -> 문자열 join() or toString()
 
-- arr.join(''); // 배열 -> 문자열
+- arr.join('');
+- var num = 24;
+  var str = num.toString();
 
 # 배열
 
@@ -223,3 +225,16 @@ new_arr= arr.slice(1,4); // 1부터 4까지 배열만 가져다 쓰기
 # 맨 뒤 배열 값 빼기 pop()
 
 arr.pop(); // 괄호 안에 아무 것도 안들어감
+
+# 배열 쉽게 만들기 map() vs from()
+
+- 둘 다 새로운 배열을 생성하는데, from() can be used with array-like and iterable objects.
+
+ex. 1부터 31까지의 수를 원소로 갖는 배열
+
+const arr = Array.from(Array(31), (\_, index) => index + 1); // 맵핑 함수의 첫 번째 인자 언더스코어(\_) 는 특별한 인자가 아니라, 불필요한 인자의 공간을 채우기 위한 용도
+
+// 이렇게 for문 안돌려도 됨
+for (let i = 1; i <= 31; i++) {
+arr.push(i);
+}
