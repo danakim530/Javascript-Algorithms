@@ -218,9 +218,15 @@ for(let i=str.length-1; i>=0; i--){
 newString+= str[i];
 }
 
-# 배열 자르기 slice
+# 문자열/배열 자르기 slice - 뒤에서부터 음수도 가능!
 
 new_arr= arr.slice(1,4); // 1부터 4까지 배열만 가져다 쓰기
+
+var str = '자바스크립트';
+var result2 = str.slice(2, 6); // 결과 : "스크립트"
+var result3 = str.slice(2); // 결과 : "스크립트"
+var result4 = str.slice(-4); // 결과 : "스크립트"
+var result6 = str.slice(2, -1); // 결과 : "스크립"
 
 # 맨 뒤 배열 값 빼기 pop()
 
@@ -238,3 +244,13 @@ const arr = Array.from(Array(31), (\_, index) => index + 1); // 맵핑 함수의
 for (let i = 1; i <= 31; i++) {
 arr.push(i);
 }
+
+# 사전순 정렬 sort()
+
+arr1.sort();
+
+# 문자열 있는지 여부 검사
+
+- indexOf() : index 또는 -1 리턴
+- includes() : true or false
+- startsWith(), endsWith() : true or false
