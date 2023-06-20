@@ -254,3 +254,5 @@ arr1.sort();
 - indexOf() : index 또는 -1 리턴
 - includes() : true or false
 - startsWith(), endsWith() : true or false
+
+# 절댓값 Math.abs()
