@@ -256,3 +256,7 @@ arr1.sort();
 - startsWith(), endsWith() : true or false
 
 # 절댓값 Math.abs()
+
+# 정확한 개수 모르면 ... rest 연산자 쓰기
+
+arr.splice(a, slicedArr.length , ...slicedArr.reverse());
