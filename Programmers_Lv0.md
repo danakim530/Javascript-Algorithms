@@ -121,6 +121,7 @@ str.index('javascript', 5) // 시작위치 지정 : 5 이후부터 검사
 str.search('javascript') // indexOf랑 같은데 시작 위치 지정 불가
 
 str.lastIndexOf('javascript') // 뒤에서부터 검사
+str.startsWith('java'); // true or false
 
 // true or false 반환
 str.includes('javascript')
@@ -260,3 +261,5 @@ arr1.sort();
 # 정확한 개수 모르면 ... rest 연산자 쓰기
 
 arr.splice(a, slicedArr.length , ...slicedArr.reverse());
+
+# 문자열 앞의 n 글자 출력하기 = 그냥 slice(0,n)하면 됨 !
