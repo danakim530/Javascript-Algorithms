@@ -263,3 +263,8 @@ arr1.sort();
 arr.splice(a, slicedArr.length , ...slicedArr.reverse());
 
 # 문자열 앞의 n 글자 출력하기 = 그냥 slice(0,n)하면 됨 !
+
+# ASCII 코드로 변환
+
+Str.charCodeAt();
+Str.codePointAt();
