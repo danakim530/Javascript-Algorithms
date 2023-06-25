@@ -268,3 +268,46 @@ arr.splice(a, slicedArr.length , ...slicedArr.reverse());
 
 Str.charCodeAt();
 Str.codePointAt();
+
+String.fromCharCode(97) => 97을 아스키코드 'a'로 변환
+'a'.charCodeAt() => 'a'를 97로 변환
+
+# reduce
+const result2 = numbers.reduce((acc, cur, idx, src) => {
+    console.log('acc: ', acc, 'cur: ', cur, 'idx: ', idx);
+    return acc + cur;
+}, 0);
+
+# 들어오는 인자의 길이를 모르면 [...my_string] 해줘야 함. 에러남 ㅠ
+ [...my_string].splice(n,1,0)  // 에러 안남
+ my_string.splice(n,1,0)하니까 에러났음 ㅠㅠ
+
+ # filter 
+ .filter(a => a!==0) // a가 0이 아닌 경우만 가져오기  - 새로운 배열을 뱉음 
+
+ # map() - 1대1로 맵핑하는 것 
+
+result = oneTwoThree.map((v) => {
+  return v + 1;
+});
+result; // [2, 3, 4]
+
+// 콜백에 3개의 매개변수 있고, thisArg는 콜백에서 this로 사용될 값. 
+array.map(callbackFunction(currenValue, index, array), thisArg)
+
+# 대표 예제 외우기... 어렵다. [프로그래머스 글자지우기 레벨0]
+1. map은 새로운 배열을 리턴 
+2. 길이가 정해지지 않은 [...my_string]의
+3. 요소(c)를 하나하나 돌며 체크
+4. i는 인덱스
+5. indices배열에 i가 있으면, 0을 대신 넣고, 없으면 현재 요소(c)를 그대로 넣기
+6. filter로 0들어가 있는거 지우기
+7 다시 문자열로 변환 
+function solution(my_string, indices) {
+   return [...my_string].map((c,i) => indices.includes(i)?0:c).filter(n => n!=0).join('');
+}
+
+# if( 2 < num < 4 ) 이렇게 쓰면 안됨!! If(2<num && num<4) &&로 쓰기!!
+
+# reduce랑 map 정복하기!!!
+
