@@ -325,3 +325,7 @@ numList.slice(a, b + 1).filter((\_, i) => i % c === 0) // 안쓰이는 요소는
 # 앞에서부터 특정 값 찾기 indexOf() / 뒤에서부터 특정 값 찾기 lastIndexOf()
 
 하나 찾으면 동작 그만함.
+
+# 두 배열 합치기 concat => 새로운 배열 뱉음
+
+const concated = arr1.concat(arr2);
