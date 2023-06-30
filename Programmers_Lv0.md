@@ -336,3 +336,7 @@ numList.slice(a, b + 1).filter((\_, i) => i % c === 0) // 안쓰이는 요소는
 # 두 배열 합치기 concat => 새로운 배열 뱉음
 
 const concated = arr1.concat(arr2);
+
+# 대체하기 str.replaceAll(a, a.toUpperCase())
+
+문자열 a를 만나면 대문자로 변환
