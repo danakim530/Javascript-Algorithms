@@ -264,13 +264,17 @@ arr.splice(a, slicedArr.length , ...slicedArr.reverse());
 
 # 문자열 앞의 n 글자 출력하기 = 그냥 slice(0,n)하면 됨 !
 
-# ASCII 코드로 변환
+# 문자열 -> ASCII 코드로 변환
+
+"hello".charCodeAt(); // 104 문자열 입력하면, 가장 앞에 있는 문자만 변환됨
+"hello".charCodeAt(1); // 101 인덱스 번호 추가 가능!
 
 Str.charCodeAt();
 Str.codePointAt();
 
-String.fromCharCode(97) => 97을 아스키코드 'a'로 변환
-'a'.charCodeAt() => 'a'를 97로 변환
+# ASCII 코드 -> 문자로 변환
+
+String.fromCharCode(97) => 97 -> 'a'로 변환
 
 # reduce
 
@@ -340,3 +344,22 @@ const concated = arr1.concat(arr2);
 # 대체하기 str.replaceAll(a, a.toUpperCase())
 
 문자열 a를 만나면 대문자로 변환
+
+# 문자열의 크기 비교 시, 아스키 코드로 안해도 됨(직접 비교 가능)
+
+[...myString].map((v) => v < 'l' ? 'l' : v).join('');
+
+# 정규표현식 RegExp : 검색!!
+
+2
+const solution = myString => myString.replace(/[a-k]/g,'l')
+
+/a/ : 맨 뒤에 플래그 없으면 최초에 발견된 문자만 반환
+/[a-k]/g : 글로벌 플래그, 전역검사하는 것(전체 발견된 모든 결과가 문자열 반환), []는 문자 그룹을 의미, 대괄호 내부의 문자열 중 하나라도 일치하는 경우를 의미
+
+// 아래의 두 정규식은 같습니다
+const regex1 = /[A-Z]/;
+const regex2 = /[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/;
+
+// 숫자가 아닌 것만 찾아보았습니다
+str.match(/[^0-9]/g);
