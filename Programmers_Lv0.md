@@ -371,3 +371,5 @@ arr.shift() - 첫번째 삭제
 arr.splice() - 요소 삭제
 arr.filter() - 조건에 맞는 새 배열 생성
 delete arr[0] - 빈 값으로 변경이라서 삭제보다는 변경에 가까운 개념
+
+# 공백을 제거 str.trim()
