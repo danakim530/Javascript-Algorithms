@@ -351,7 +351,7 @@ const concated = arr1.concat(arr2);
 
 # 정규표현식 RegExp : 검색!!
 
-2
+// myString 문자열 중 l보다 작은 a-k는 모두 'l'로 변경
 const solution = myString => myString.replace(/[a-k]/g,'l')
 
 /a/ : 맨 뒤에 플래그 없으면 최초에 발견된 문자만 반환
@@ -363,3 +363,11 @@ const regex2 = /[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/;
 
 // 숫자가 아닌 것만 찾아보았습니다
 str.match(/[^0-9]/g);
+
+# 배열 삭제 - remove 함수가 없음
+
+arr.pop() - 마지막 요소 삭제
+arr.shift() - 첫번째 삭제
+arr.splice() - 요소 삭제
+arr.filter() - 조건에 맞는 새 배열 생성
+delete arr[0] - 빈 값으로 변경이라서 삭제보다는 변경에 가까운 개념
