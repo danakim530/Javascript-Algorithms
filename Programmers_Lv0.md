@@ -191,6 +191,8 @@ const arr1 = Array.from(Array(5), () => new Array(2)
 // arr[5][2] (null로 초기화하여 생성)
 const arr2 = Array.from(Array(5), () => Array(2).fill(null))
 
+# 그냥 배열 생성하기 let arr = Array(31).fill(0);
+
 # 숫자의 배열 중 min, max 값 찾기
 
 // Math.min 또는 Math.max 메서드에 배열을 넘기면 NaN이 나옴..배열이 아닌 고유한 숫자를 기대하기 때문
