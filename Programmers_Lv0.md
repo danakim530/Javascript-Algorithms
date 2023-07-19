@@ -383,3 +383,12 @@ arr.filter() - 조건에 맞는 새 배열 생성
 delete arr[0] - 빈 값으로 변경이라서 삭제보다는 변경에 가까운 개념
 
 # 공백을 제거 str.trim()
+
+# SQL은 두가지로 풀 수 있음. ORACLE, MySQL
+
+SQL = Structured Query Language (관계형 데이터베이스시스템(RDBMS)에서 자료를 처리하기 위해 설계된 언어)
+= DB에 있는 데이터 꺼낼 때 필요한 것. DB가 알아들을 수 있는 유일한 언어. 데이터 추출, 가공 가능.
+
+두 DB의 SQL 쿼리 차이 있음.
+
+- 모든 레코드 조회 SELECT
