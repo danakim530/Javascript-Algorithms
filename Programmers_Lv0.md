@@ -392,3 +392,5 @@ SQL = Structured Query Language (관계형 데이터베이스시스템(RDBMS)에
 두 DB의 SQL 쿼리 차이 있음.
 
 - 모든 레코드 조회 SELECT
+
+# 제곱근 Math.sqrt(4) == 2
