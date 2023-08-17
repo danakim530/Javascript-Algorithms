@@ -394,3 +394,15 @@ SQL = Structured Query Language (관계형 데이터베이스시스템(RDBMS)에
 - 모든 레코드 조회 SELECT
 
 # 제곱근 Math.sqrt(4) == 2
+
+소수점 8째 자리까지만 반환
+그보다 아랫 값들은 확인할 수 없게 되고 그래서 소수점을 완전하게 비교할 수 없습니다.
+Math.ceil의 경우 소수점 자리에 값이 있다면 +1이 되기때문에 위 경우 Math.ceil(Math.sqrt(n))을 통해 x를 비교
+
+# fill()
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.fill("Kiwi", 2, 4); // index 2부터 4까지 Kiwi로 채우기
+
+// 전화번호가 문자열 phone_number로 주어졌을 때, 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 _으로 가린 문자열을 리턴
+const solution = n => [...n].fill("_",0,n.length-4).join("")
