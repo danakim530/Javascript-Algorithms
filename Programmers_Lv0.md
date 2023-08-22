@@ -404,5 +404,12 @@ Math.ceil의 경우 소수점 자리에 값이 있다면 +1이 되기때문에 �
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.fill("Kiwi", 2, 4); // index 2부터 4까지 Kiwi로 채우기
 
-// 전화번호가 문자열 phone_number로 주어졌을 때, 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 _으로 가린 문자열을 리턴
-const solution = n => [...n].fill("_",0,n.length-4).join("")
+// 전화번호가 문자열 phone*number로 주어졌을 때, 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 *으로 가린 문자열을 리턴
+const solution = n => [...n].fill("\_",0,n.length-4).join("")
+
+# sort() - 문자열 정렬임! 숫자 정렬 안됨 ㅠ
+
+[10,5] 이런거 정렬 안됨
+
+nums.sort((a,b) => a - b); 이렇게 써야 오름차순 됨
+nums.sort((a,b) => b - a); 내림차순은 이렇게!
