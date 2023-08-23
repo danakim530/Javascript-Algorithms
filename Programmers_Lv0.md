@@ -409,7 +409,13 @@ const solution = n => [...n].fill("\_",0,n.length-4).join("")
 
 # sort() - 문자열 정렬임! 숫자 정렬 안됨 ㅠ
 
-[10,5] 이런거 정렬 안됨
+[10,5] 이런거 정렬 안됨. UTF-16 코드 단위 값으로 정렬함
 
 nums.sort((a,b) => a - b); 이렇게 써야 오름차순 됨
 nums.sort((a,b) => b - a); 내림차순은 이렇게!
+
+# 배열 중 최소값 구하기 -> Math.min 쓰기!!
+
+Math.min(...arr)
+
+numbers.splice(index, 1); //index부터 1개 지우기
